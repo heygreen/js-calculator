@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | Debuggd</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <input type="checkbox" name="darkmode" id="switch-theme" onclick="changeTheme()">
+    <div id="content">
+        <input class="output" id="output" placeholder="Result" readonly />
+        <div class="btn-cont">
+            <button class="op-btn" id="ac" onclick="allClear()">AC</button>
+            <button class="op-btn" onclick="rmChar()">C</button>
+            <button class="op-btn" onclick="addToScreen('/')">:</button>
+        </div>
+        <div class="btn-cont">
+            <button class="num-btn" onclick="addToScreen('7')">7</button>
+            <button class="num-btn" onclick="addToScreen('8')">8</button>
+            <button class="num-btn" onclick="addToScreen('9')">9</button>
+            <button class="op-btn" onclick="addToScreen('*')">x</button>
+        </div>
+        <div class="btn-cont">
+            <button class="num-btn" onclick="addToScreen('4')">4</button>
+            <button class="num-btn" onclick="addToScreen('5')">5</button>
+            <button class="num-btn" onclick="addToScreen('6')">6</button>
+            <button class="op-btn" onclick="addToScreen('-')">-</button>
+        </div>
+        <div class="btn-cont">
+            <button class="num-btn" onclick="addToScreen('1')">1</button>
+            <button class="num-btn" onclick="addToScreen('2')">2</button>
+            <button class="num-btn" onclick="addToScreen('3')">3</button>
+            <button class="op-btn" onclick="addToScreen('+')">+</button>
+        </div>
+        <div class="btn-cont">
+            <button class="num-btn" onclick="addToScreen('0')">0</button>
+            <button class="num-btn" onclick="addToScreen('.')">,</button>
+            <button class="op-btn" id="get-result" onclick="calc(out.value)">=</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
